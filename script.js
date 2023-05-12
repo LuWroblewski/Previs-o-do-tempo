@@ -10,7 +10,7 @@ function atualizarElementos(data) {
   // Define o conteúdo do elemento com id "icone" como a imagem correspondente ao clima
   document.getElementById("icone").innerHTML = `<img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">`;
   // Define o texto do elemento com id "sensacao" como a sensação térmica atual
-  document.getElementById("sensacao").textContent = `: ${data.main.feels_like}°C`;
+  document.getElementById("sensacao").textContent = `Sensação termica de: ${data.main.feels_like}°C`;
   // Define o texto do elemento com id "minima" como a temperatura mínima do dia
   document.getElementById("minima").textContent = `Mínima: ${data.main.temp_min}°C`;
   // Define o texto do elemento com id "maxima" como a temperatura máxima do dia
